@@ -1,414 +1,792 @@
 <!DOCTYPE html>
 <html>
-  <head class="has-navbar-fixed-top">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Gfriend</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
-    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
-    <script src="app.js"></script>
-  </head>
-  <body>
-   
-    <nav class="navbar is-transparent">
-      <div class="navbar-brand">
-        <a class="navbar-item" href="index.html">
-          <img src="images/Glogo.jpg" alt="Gfriend-logo"width="130" height="30">
-        </a>
-        <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
+<head>
+<meta charset="utf-8">
+<title>Gfirend | Homepage</title>
+<!-- Stylesheets -->
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/main.css" rel="stylesheet">
+<link href="css/responsive.css" rel="stylesheet">
+
+<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+<link rel="icon" href="images/favicon.png" type="image/x-icon">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Titillium+Web:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+
+<!-- Responsive -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
+<!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+</head>
+
+<body>
+
+<div class="page-wrapper">
+ 	
+    <!-- Preloader -->
+    <div class="preloader"></div>
+ 	
+    <!-- Main Header-->
+    <header class="main-header header-style-one">
+		
+		<!-- Header Top -->
+        <div class="header-top">
+            <div class="auto-container">
+                <div class="clearfix">
+				
+					<!-- Top Left -->
+                    <div class="top-left pull-left clearfix">
+					
+						<!-- Info List -->
+                        <ul class="info-list">
+							<li><span>Call Us:</span><a href="tel:+123-456-7890"> +237 677730017</a></li>
+							<li><span>Email Us:</span><a href="mailto:info@gfriend.com"> info@gfriend.com</a></li>
+						</ul>
+						
+                    </div>
+					
+					<!-- Top Right -->
+					<div class="top-right pull-right clearfix">
+						<!-- Login Nav -->
+						<ul class="login-nav">
+							<li><a href="login.html">Log In</a></li>
+							<li><a href="register.html">Register</a></li>
+						</ul>
+					</div>
+					
+                </div>
+            </div>
         </div>
-      </div>
-    
-      <div id="navbarExampleTransparentExample" class="navbar-menu">
-        <div class="navbar-start">
-          <a class="navbar-item" href="index.html">
-            <span class="icon">
-              <i class="fas fa-home"></i>
-            </span>
-            HOME
-          </a>
-          <div class="navbar-item has-dropdown is-hoverable">
-            <a class="navbar-link" href="#">
-              MOCK QUESTIONS
-            </a>
-            <div class="navbar-dropdown is-boxed">
+		
+    	<!-- Header Upper -->
+        <div class="header-upper">
+        	<div class="auto-container">
+            	<div class="clearfix">
+                	
+                	<div class="pull-left logo-box">
+                    	<div class="logo"><a href="index.html"><img src="./images/logo.png" alt="" title="Bootcamp"></a></div>
+                    </div>
+                   	
+                   	<div class="nav-outer clearfix">
+						<!--Mobile Navigation Toggler-->
+                        <div class="mobile-nav-toggler"><span class="icon flaticon-menu"></span></div>
+						<!-- Main Menu -->
+						<nav class="main-menu show navbar-expand-md">
+							<div class="navbar-header">
+								<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								</button>
+							</div>
+
+							<div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
+								<ul class="navigation clearfix">
+									<li class="current dropdown"><a href="index.html">Home</a>
+										
+									</li>
+									<li class="dropdown"><a href="price.html">Subscriptions</a>	
+									</li>
+									<li class="dropdown"><a href="#">Courses</a>
+                                    </li>
+									<li class="dropdown"><a href="books.html">Books</a>
+                                    </li>
+									<li class="dropdown"><a href="#">Profiles</a>
+                                        <ul>
+                                            <li><a href="intro-profile.html">Instructor Profile</a></li>
+											<li><a href="student-profile.html">Student Profile</a></li>
+											<li><a href="edit-profile.html">Edit Profile</a></li>
+                                        </ul>
+                                    </li>
+									<li class="dropdown"><a href="blog.html">Blog</a>
+                                       
+                                    </li>
+									<li><a href="contact.html">Contact Us</a></li>
+								</ul>
+							</div>
+							
+						</nav>
+						
+					</div>
+                   
+                </div>
+            </div>
+        </div>
+        <!-- End Header Upper -->
         
-              <a class="navbar-item" href="#">
-                SOUTH-WEST MOCK
-              </a>
-              <a class="navbar-item" href="#">
-                NORTH-WEST MOCK
-              </a>
-              <a class="navbar-item" href="#">
-                WEST-MOCK
-              </a>
+		<!-- Mobile Menu  -->
+        <div class="mobile-menu">
+            <div class="menu-backdrop"></div>
+            <div class="close-btn"><span class="icon flaticon-multiply"></span></div>
             
-            </div>
-          </div>
-          <div class="navbar-item has-dropdown is-hoverable">
-            <a class="navbar-link" href="#">
-              REVISION NOTES
-            </a>
-            <div class="navbar-dropdown is-boxed">
-        
-              <a class="navbar-item" href="#">
-                GCE A/L REVISON NOTES
-              </a>
-              <a class="navbar-item" href="#">
-                 GCE O/L REVISION NOTES
-              </a>
-              <a class="navbar-item" href="#">
-                 TECHNICAL GCE NOTES
-              </a>
-            
-            </div>
-          </div>
-          <div class="navbar-item has-dropdown is-hoverable">
-            <a class="navbar-link" href="#">
-               GCE QUESTIONS
-            </a>
-            <div class="navbar-dropdown is-boxed">
-              <a class="navbar-item" href="#">
-              GCE ADVANCED LEVEL GENERAL
-              </a>
-              <a class="navbar-item" href="#">
-                GCE ORDINARY LEVEL GENERAL
-              </a>
-              <a class="navbar-item" href="#">
-                GCE A/L TECHNICAL
-              </a>
-              <a class="navbar-item" href="#">
-                 GCE O/L TECHNICAL
-              </a>
-              <a class="navbar-item" href="#">
-                BAC TECHNICAL
-              </a>
-            
-            </div>
-          </div>
+            <nav class="menu-box">
+                <div class="nav-logo"><a href="index.html"><img src="https://via.placeholder.com/230x60" alt="" title=""></a></div>
+                <div class="menu-outer">
+					<!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
+				</div>
+            </nav>
         </div>
-        <a class="navbar-item" href="#">
-          ABOUT US
-       </a>
-    
-        <div class="navbar-end">
-          <div class="navbar-item">
-            <div class="buttons">
-              <a class="button is-success">
-                <strong><i class="fal fa-users-medical"></i>Become a Member</strong>
-              </a>
-              <a class="button is-success">
-                <strong>Sign Up</strong>
-              </a>
-              <a class="button is-light">
-                Sign In
-              </a>
-            </div>
-          </div>
-      </div>
-    </nav>
-    <section class="hero is-primary is-bold">
-      <div class="hero-body">
-        <div class="container">
-          <h2 class="title">
-            WELCOME TO YOUR GCE FRIEND
-          </h2>
-          <p class="subtitle">
-						We provide you with the best educational content to help you succeed
-          </p>
-          <button class="button is-success">Get started</button>
-        </div>
-      </div>
-    </section>
-    <br>
-    <div class="field has-addons has-addons-fullwidth">
-      <div class="control">
-        <input class="input" type="text" placeholder="Select what you're into. We'll help you find great things to read.">
-      </div>
-      <div class="control">
-        <a class="button is-success">
-          Search
-        </a>
-      </div>
-    </div>
-    <h1 class="title">Top Search</h1>
-<h2 class="subtitle">Gfriend Digittaly Yours</h2>
-    <center><div class="field is-grouped is-grouped-multiline">
-      <p class="control">
-        <a class="button is-success is-rounded">
-          <i class="fas fa-hashtag"></i> Biology
-        </a>
-      </p>
-      <p class="control">
-        <a class="button is-success is-rounded">
-          <i class="fas fa-hashtag"></i> Biology
-        </a>
-      </p>
-      <p class="control">
-        <a class="button is-success is-rounded">
-          <i class="fas fa-hashtag"></i> Biology
-        </a>
-      </p>
-      <p class="control">
-        <a class="button is-success is-rounded">
-          <i class="fas fa-hashtag"></i> Biology
-        </a>
-      </p>
-      <p class="control">
-        <a class="button is-success is-rounded">
-          <i class="fas fa-hashtag"></i> Biology
-        </a>
-      </p>
-      <p class="control">
-        <a class="button is-success is-rounded">
-          <i class="fas fa-hashtag"></i> Biology
-        </a>
-      </p>
-      <p class="control">
-        <a class="button is-success is-rounded">
-          <i class="fas fa-hashtag"></i> Biology
-        </a>
-      </p>
-      <p class="control">
-        <a class="button is-success is-rounded">
-          <i class="fas fa-hashtag"></i> Biology
-        </a>
-      </p>
-      <p class="control">
-        <a class="button is-success is-rounded">
-          <i class="fas fa-hashtag"></i> Biology
-        </a>
-      </p>
-      <p class="control">
-        <a class="button is-success is-rounded">
-          <i class="fas fa-hashtag"></i> Biology
-        </a>
-      </p>
-      <p class="control">
-        <a class="button">
-          Eleven
-        </a>
-      </p>
-      <p class="control">
-        <a class="button is-success is-rounded">
-          <i class="fas fa-hashtag"></i> Biology
-        </a>
-      </p>
-      <p class="control">
-        <a class="button is-success is-rounded">
-          <i class="fas fa-hashtag"></i> Biology
-        </a>
-      </p>
-    </div>
-    <div class="field is-grouped is-grouped-multiline">
-      <p class="control">
-        <a class="button is-danger is-rounded">
-          <i class="fas fa-hashtag"></i> Biology
-        </a>
-      </p>
-      <p class="control">
-        <a class="button is-info is-rounded">
-        <i class="fas fa-hashtag"></i> Geography
-      </a>
-      </p>
-      <p class="control">
-        <a class="button">
-          Three
-        </a>
-      </p>
-      <p class="control">
-        <a class="button">
-          Four
-        </a>
-      </p>
-      <p class="control">
-        <a class="button">
-          Five
-        </a>
-      </p>
-      <p class="control">
-        <a class="button">
-          Size
-        </a>
-      </p>
-      <p class="control">
-        <a class="button">
-          Seven
-        </a>
-      </p>
-      <p class="control">
-        <a class="button">
-          Eight
-        </a>
-      </p>
-      <p class="control">
-        <a class="button">
-          Nine
-        </a>
-      </p>
-      <p class="control">
-        <a class="button">
-          Ten
-        </a>
-      </p>
-      <p class="control">
-        <a class="button">
-          Eleven
-        </a>
-      </p>
-      <p class="control">
-        <a class="button">
-          Twelve
-        </a>
-      </p>
-      <p class="control">
-        <a class="button">
-          Thirteen
-        </a>
-      </p>
-    </div>
-    <div class="field is-grouped is-grouped-multiline">
-      <p class="control">
-        <a class="button">
-          One
-        </a>
-      </p>
-      <p class="control">
-        <a class="button">
-          Two
-        </a>
-      </p>
-      <p class="control">
-        <a class="button">
-          Three
-        </a>
-      </p>
-      <p class="control">
-        <a class="button">
-          Four
-        </a>
-      </p>
-      <p class="control">
-        <a class="button">
-          Five
-        </a>
-      </p>
-      <p class="control">
-        <a class="button">
-          Size
-        </a>
-      </p>
-      <p class="control">
-        <a class="button">
-          Seven
-        </a>
-      </p>
-      <p class="control">
-        <a class="button">
-          Eight
-        </a>
-      </p>
-      <p class="control">
-        <a class="button">
-          Nine
-        </a>
-      </p>
-      <p class="control">
-        <a class="button">
-          Ten
-        </a>
-      </p>
-      <p class="control">
-        <a class="button  is-rounded">
-          Eleven
-        </a>
-      </p>
-      <p class="control">
-        <a class="button  is-rounded">
-          Twelve
-        </a>
-      </p>
-      <p class="control">
-        <a class="button">
-          Thirteen
-        </a>
-      </p>
-    </div>
-  </div>
-    <section class="section has-background-light">
-      <h2 class="title">
-        For students, by students
-      </h2>
-      <p class="subtitle">
-        Our Process
-      </p>
-      <div class="container">
-        <div class="container">
-          <div class="columns">
-            <div class="column">
-              <div class="notification is-info">
-                <p class="is-size-5">
-                  High achieving students from Gfriend Team get in touch and decide to dedicate hours of time in constructing the first set of draft notes for a subject
-                </p>
+		<!-- End Mobile Menu -->
+		
+    </header>
+    <!-- End Main Header -->
+	
+	<!-- Banner Section -->
+    <section class="banner-section">
+		<div class="pattern-layer" style="background-image: url(images/background/1.png)"></div>
+		<div class="auto-container">
 
-              </div>
-            </div>
-            <div class="column">
-              <div class="notification is-primary">
-                <p class="is-size-5">
-                  We get in touch with other students and content specialists to validate the content and thoroughly check against the syllabus
-                </p>
+			<!-- Content Boxed -->
+			<div class="content-boxed">
+				<div class="inner-column">
+					<h1>Learn Math, Science, English and Test <br> Prep from our Experts</h1>
+					<div class="buttons-box">
+						<a href="course.html" class="theme-btn btn-style-one"><span class="txt">Get Stared <i class="fa fa-angle-right"></i></span></a>
+						<a href="course.html" class="theme-btn btn-style-two"><span class="txt">All Features<i class="fa fa-angle-right"></i></span></a>
+					</div>
+				</div>
+			</div>
+			
+			<!-- Image Boxed -->
+			<div class="image titlt" data-tilt data-tilt-max="4">
+				<a href="https://via.placeholder.com/1180x504" data-fancybox="banner" data-caption="" class=""><img src="https://via.placeholder.com/1180x504" alt="" /></a>
+			</div>
+			
+			<!-- Search Boxed -->
+			<div class="search-boxed">
+				<div class="search-box">
+					<form method="post" action="contact.html">
+						<div class="form-group">
+							<input type="search" name="search-field" value="" placeholder="What do you want to learn?" required>
+							<button type="submit"><span class="icon fa fa-search"></span></button>
+						</div>
+					</form>
+				</div>
+			</div>
+			
+		</div>
+	</section>
+	<!-- End Banner Section -->
+	
+	<!-- Education Section -->
+	<section class="education-section">
+		<div class="patern-layer-one paroller" data-paroller-factor="0.60" data-paroller-factor-lg="0.20" data-paroller-type="foreground" data-paroller-direction="vertical" style="background-image: url(images/icons/icon-1.png)"></div>
+		<div class="patern-layer-two paroller" data-paroller-factor="0.60" data-paroller-factor-lg="-0.20" data-paroller-type="foreground" data-paroller-direction="vertical" style="background-image: url(images/icons/icon-2.png)"></div>
+		<div class="auto-container">
+			<div class="row clearfix">
+				
+				<!-- Image Column -->
+				<div class="image-column col-lg-6 col-md-12 col-sm-12">
+					<div class="inner-column parallax-scene-1">
+						<div class="image parallax-layer" data-depth="0.30">
+							<img src="https://via.placeholder.com/580x475" alt="" />
+						</div>
+					</div>
+				</div>
+				
+				<!-- Content Column -->
+				<div class="content-column col-lg-6 col-md-12 col-sm-12">
+					<div class="inner-column">
+						<h2>Our education system <br> works for you</h2>
+						<div class="text">Replenish him third creature and meat blessed void a fruit gathered you’re, they’re two waters own morning gathered greater shall had behold had seed.</div>
+						<a href="course.html" class="theme-btn btn-style-two"><span class="txt">Learn More <i class="fa fa-angle-right"></i></span></a>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</section>
+	<!-- End Education Section -->
+	
+	<!-- Courses Section -->
+	<section class="courses-section">
+		<div class="auto-container">
+			<div class="row clearfix">
+				
+				<!-- Title Column -->
+				<div class="title-column col-lg-4 col-md-12 col-sm-12">
+					<div class="inner-column">
+						<!-- Sec Title -->
+						<div class="sec-title">
+							<h2>Our top lessons</h2>
+							<div class="text">Replenish him third creature and meat blessed void a fruit gathered you’re, they’re two waters own morning gathered.</div>
+						</div>
+						<a href="course.html" class="theme-btn btn-style-three"><span class="txt">Get Stared <i class="fa fa-angle-right"></i></span></a>
+					</div>
+				</div>
+				
+				<!-- Cource Block -->
+				<div class="cource-block col-lg-4 col-md-6 col-sm-12">
+					<div class="inner-box">
+						<div class="image">
+							<a href="course-detail.html"><img src="https://via.placeholder.com/370x253" alt="" /></a>
+						</div>
+						<div class="lower-content">
+							<div class="clearfix">
+								<div class="pull-left">
+									<h5><a href="course-detail.html">Computer Science</a></h5>
+								</div>
+								<div class="pull-right">
+									<div class="price">XAF140</div>
+								</div>
+							</div>
+							<div class="text">Replenish him third creature and meat blessed void a fruit gathered you’re, they’re two waters.</div>
+							<div class="clearfix">
+								<div class="pull-left">
+									<div class="students">125 Student</div>
+								</div>
+								<div class="pull-right">
+									<a href="course-detail.html" class="enroll">Enroll Now</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<!-- Cource Block -->
+				<div class="cource-block col-lg-4 col-md-6 col-sm-12">
+					<div class="inner-box">
+						<div class="image">
+							<a href="course-detail.html"><img src="https://via.placeholder.com/370x253" alt="" /></a>
+						</div>
+						<div class="lower-content">
+							<div class="clearfix">
+								<div class="pull-left">
+									<h5><a href="course-detail.html">Data Science</a></h5>
+								</div>
+								<div class="pull-right">
+									<div class="price">XAF140</div>
+								</div>
+							</div>
+							<div class="text">Replenish him third creature and meat blessed void a fruit gathered you’re, they’re two waters.</div>
+							<div class="clearfix">
+								<div class="pull-left">
+									<div class="students">125 Student</div>
+								</div>
+								<div class="pull-right">
+									<a href="course-detail.html" class="enroll">Enroll Now</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<!-- Cource Block -->
+				<div class="cource-block col-lg-4 col-md-6 col-sm-12">
+					<div class="inner-box">
+						<div class="image">
+							<a href="course-detail.html"><img src="https://via.placeholder.com/370x253" alt="" /></a>
+						</div>
+						<div class="lower-content">
+							<div class="clearfix">
+								<div class="pull-left">
+									<h5><a href="course-detail.html">Development Course</a></h5>
+								</div>
+								<div class="pull-right">
+									<div class="price">XAF140</div>
+								</div>
+							</div>
+							<div class="text">Replenish him third creature and meat blessed void a fruit gathered you’re, they’re two waters.</div>
+							<div class="clearfix">
+								<div class="pull-left">
+									<div class="students">125 Student</div>
+								</div>
+								<div class="pull-right">
+									<a href="course-detail.html" class="enroll">Enroll Now</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<!-- Cource Block -->
+				<div class="cource-block col-lg-4 col-md-6 col-sm-12">
+					<div class="inner-box">
+						<div class="image">
+							<a href="course-detail.html"><img src="https://via.placeholder.com/370x253" alt="" /></a>
+						</div>
+						<div class="lower-content">
+							<div class="clearfix">
+								<div class="pull-left">
+									<h5><a href="course-detail.html">Language Course</a></h5>
+								</div>
+								<div class="pull-right">
+									<div class="price">XAF140</div>
+								</div>
+							</div>
+							<div class="text">Replenish him third creature and meat blessed void a fruit gathered you’re, they’re two waters.</div>
+							<div class="clearfix">
+								<div class="pull-left">
+									<div class="students">125 Student</div>
+								</div>
+								<div class="pull-right">
+									<a href="course-detail.html" class="enroll">Enroll Now</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<!-- Cource Block -->
+				<div class="cource-block col-lg-4 col-md-6 col-sm-12">
+					<div class="inner-box">
+						<div class="image">
+							<a href="course-detail.html"><img src="https://via.placeholder.com/370x253" alt="" /></a>
+						</div>
+						<div class="lower-content">
+							<div class="clearfix">
+								<div class="pull-left">
+									<h5><a href="course-detail.html">Business Course</a></h5>
+								</div>
+								<div class="pull-right">
+									<div class="price">XAF140</div>
+								</div>
+							</div>
+							<div class="text">Replenish him third creature and meat blessed void a fruit gathered you’re, they’re two waters.</div>
+							<div class="clearfix">
+								<div class="pull-left">
+									<div class="students">125 Student</div>
+								</div>
+								<div class="pull-right">
+									<a href="course-detail.html" class="enroll">Enroll Now</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</section>
+	<!-- End Courses Section -->
+	
+	<!-- Call To Action Section -->
+	<section class="call-to-action-section">
+		<div class="auto-container">
+			<div class="row clearfix">
+				
+				<!-- Title Column -->
+				<div class="title-column col-lg-6 col-md-12 col-sm-12">
+					<div class="inner-column">
+						<!-- Sec Title -->
+						<div class="sec-title">
+							<h2>Live the experience <br> learn at your own pace</h2>
+							<div class="text">Replenish him third creature and meat blessed void a fruit gathered you’re, they’re two waters.</div>
+						</div>
+					</div>
+				</div>
+				
+				<!-- Form Column -->
+				<div class="form-column col-lg-6 col-md-12 col-sm-12">
+					<div class="inner-column">
+						<div class="help">For Help?</div>
+						<div class="search-box">
+							<form method="post" action="contact.html">
+								<div class="form-group">
+									<input type="search" name="search-field" value="" placeholder="What do you want to learn?" required>
+									<button type="submit"><span class="icon fa fa-search"></span></button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</section>
+	<!-- End Call To Action Section -->
+	
+	<!-- Video Section -->
+	<section class="video-section" style="background-image: url(https://via.placeholder.com/1920x1200)">
+		<div class="auto-container">
+			<a href="https://www.youtube.com/watch?v=kxPCFljwJws" class="lightbox-image video-box"><span class="fa fa-play"><i class="ripple"></i></span></a>
+			<h4>Watch Intro Video</h4>
+		</div>
+	</section>
+	<!-- End Video Section -->
+	
+	<!-- Achievement Section -->
+	<section class="achievements-section">
+		<div class="auto-container">
+			<!-- Sec Title -->
+			<div class="sec-title centered">
+				<h2>Our achievements</h2>
+				<div class="text">Replenish him third creature and meat blessed void a fruit gathered you’re, they’re <br> two waters own morning gathered greater shall had behold had seed.</div>
+			</div>
+			
+			<!-- Fact Counter -->
+			<div class="fact-counter">
+				<div class="row clearfix">
 
-              </div>
-            </div>
-            <div class="column">
-              <div class="notification is-warning">
-                <p class="is-size-5">
-                  The team at Gfriend work with the students to bring the look and feel to the notes making sure they are beautiful yet concise
-                </p>
+					<!-- Column -->
+					<div class="column counter-column col-lg-4 col-md-6 col-sm-12">
+						<div class="inner wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+							<div class="content">
+								<div class="icon-box">
+									<span class="icon flaticon-course"></span>
+								</div>
+								<h4 class="counter-title">Total Courses</h4>
+								<div class="count-outer count-box">
+									<span class="count-text" data-speed="2000" data-stop="50">0</span>+
+								</div>
+							</div>
+						</div>
+					</div>
 
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="section has-background-light"> 
-      <div class="container">
-        <div class="container">
-          <div class="columns">
-            <div class="column">
-              <div class="notification is-info">
-                <p class="is-size-5">
-                  High achieving students from Gfriend Team get in touch and decide to dedicate hours of time in constructing the first set of draft notes for a subject
-                </p>
+					<!-- Column -->
+					<div class="column counter-column col-lg-4 col-md-6 col-sm-12">
+						<div class="inner wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+							<div class="content">
+								<div class="icon-box">
+									<span class="icon flaticon-course-1"></span>
+								</div>
+								<h4 class="counter-title">Total Student</h4>
+								<div class="count-outer count-box alternate">
+									<span class="count-text" data-speed="3000" data-stop="45">0</span>K+
+								</div>
+							</div>
+						</div>
+					</div>
 
-              </div>
-            </div>
-            <div class="column">
-              <div class="notification is-primary">
-                <p class="is-size-5">
-                  We get in touch with other students and content specialists to validate the content and thoroughly check against the syllabus
-                </p>
+					<!-- Column -->
+					<div class="column counter-column col-lg-4 col-md-6 col-sm-12">
+						<div class="inner wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
+							<div class="content">
+								<div class="icon-box">
+									<span class="icon flaticon-world"></span>
+								</div>
+								<h4 class="counter-title">Global Position</h4>
+								<div class="count-outer count-box">
+									<span class="count-text" data-speed="4000" data-stop="115">0</span>
+								</div>
+							</div>
+						</div>
+					</div>
 
-              </div>
+				</div>
+				
+			</div>
+		</div>
+	</section>
+	<!-- End Achievement Section -->
+	
+	<!-- Fluid Section One -->
+    <section class="fluid-section-one">
+		<div class="patern-layer-one paroller" data-paroller-factor="0.60" data-paroller-factor-lg="0.20" data-paroller-type="foreground" data-paroller-direction="vertical" style="background-image: url(images/icons/icon-1.png)"></div>
+    	<div class="outer-container clearfix">
+        	
+			<!-- Image Column -->
+            <div class="image-column" style="background-image:url(https://via.placeholder.com/845x830)">
+            	<figure class="image-box"><img src="https://via.placeholder.com/845x830" alt=""></figure>
             </div>
-            <div class="column">
-              <div class="notification is-warning">
-                <p class="is-size-5">
-                  The team at Gfriend work with the students to bring the look and feel to the notes making sure they are beautiful yet concise
-                </p>
+			
+            <!-- Content Column -->
+            <div class="content-column">
+            	<div class="inner-column">
+					<div class="clearfix">
+						<div class="pull-left">
+							<h2>Upcoming events</h2>
+						</div>
+						<div class="pull-right">
+							<a href="course-detail.html" class="events">All Events</a>
+						</div>
+					</div>
+					
+					<!-- Blocks Outer -->
+					<div class="blocks-outer">
+						
+						<!-- Event Block -->
+						<div class="event-block">
+							<div class="inner-box">
+								<div class="clearfix">
+									<!-- Event Date -->
+									<div class="event-date clearfix"><span class="date">21</span>JAN 2020</div>
+									<!-- Event List -->
+									<ul class="event-list">
+										<li><a href="course-detail.html">ART & DESIGN</a></li>
+										<li><a href="course-detail.html">PAINTING</a></li>
+									</ul>
+								</div>
+								<h3><a href="course-detail.html">Workshop on UI/ UX</a></h3>
+							</div>
+						</div>
+						
+						<!-- Event Block -->
+						<div class="event-block">
+							<div class="inner-box">
+								<div class="clearfix">
+									<!-- Event Date -->
+									<div class="event-date clearfix"><span class="date">15</span>Mar 2020</div>
+									<!-- Event List -->
+									<ul class="event-list">
+										<li><a href="course-detail.html">ART & DESIGN</a></li>
+										<li><a href="course-detail.html">PAINTING</a></li>
+									</ul>
+								</div>
+								<h3><a href="course-detail.html">Amsterdam art weekend</a></h3>
+							</div>
+						</div>
+						
+						<!-- Event Block -->
+						<div class="event-block">
+							<div class="inner-box">
+								<div class="clearfix">
+									<!-- Event Date -->
+									<div class="event-date clearfix"><span class="date">21</span>mar 2020</div>
+									<!-- Event List -->
+									<ul class="event-list">
+										<li><a href="course-detail.html">ART & DESIGN</a></li>
+										<li><a href="course-detail.html">PAINTING</a></li>
+									</ul>
+								</div>
+								<h3><a href="course-detail.html">Outside fashion - Group exhibition</a></h3>
+							</div>
+						</div>
+						
+					</div>
+					
+				</div>
+			</div>
+			
+		</div>
+	</section>
+	
+	<!-- News Section -->
+	<section class="news-section">
+		<div class="auto-container">
+			<div class="row clearfix">
+				
+				<!-- Title Column -->
+				<div class="title-column col-lg-6 col-md-12 col-sm-12">
+					<div class="inner-column">
+						<!-- Sec Title -->
+						<div class="sec-title">
+							<h2>Our Latest blog posts</h2>
+							<div class="text">Replenish him third creature and meat blessed void a fruit gathered you’re, they’re two waters own morning gathered greater shall had behold had seed.</div>
+						</div>
+						<a href="course.html" class="theme-btn btn-style-three"><span class="txt">All Blog Post <i class="fa fa-angle-right"></i></span></a>
+					</div>
+				</div>
+				
+				<!-- News Column -->
+				<div class="news-block col-lg-6 col-md-12 col-sm-12">
+					<div class="inner-box">
+						<div class="image">
+							<a href="blog-detail.html"><img src="https://via.placeholder.com/500x260" alt="" /></a>
+						</div>
+						<div class="lower-content">
+							<h3><a href="blog-detail.html">To apply signal detection theory</a></h3>
+							<div class="text">Replenish him third creature and meat blessed void a fruit gathered you’re, they’re two waters</div>
+							<a href="blog-detail.html" class="read-more">Continue Reading</a>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</section>
+	<!-- End News Section -->
+	
+	<!-- Testimonial Section -->
+	<section class="testimonial-section">
+		<div class="auto-container">
+			<!-- Sec Title -->
+			<div class="sec-title centered">
+				<h2>Students & Parents Opinion</h2>
+			</div>
+			
+			<!-- Authors Box -->
+			<div class="authors-box">
+				<div class="author-one"><img src="https://via.placeholder.com/50x50" alt="" /></div>
+				<div class="author-two"><img src="https://via.placeholder.com/80x80" alt="" /></div>
+				<div class="author-three"><img src="https://via.placeholder.com/70x70" alt="" /></div>
+				<div class="author-four"><img src="https://via.placeholder.com/88x88" alt="" /></div>
+				
+				<div class="author-five"><img src="images/resource/author-6.jpg" alt="" /></div>
+				<div class="author-six"><img src="https://via.placeholder.com/80x80" alt="" /></div>
+				<div class="author-seven"><img src="https://via.placeholder.com/70x70" alt="" /></div>
+				<div class="author-eight"><img src="https://via.placeholder.com/30x30" alt="" /></div>
+			</div>
+			
+			<div class="single-item-carousel owl-carousel owl-theme">
+				
+				<!-- Testimonial Block Two -->
+				<div class="testimonial-block">
+					<div class="inner-box">
+						<div class="image-box">
+							<div class="quote-icon flaticon-quote-5"></div>
+							<div class="image">
+								<img src="https://via.placeholder.com/90x90" alt="" />
+							</div>
+						</div>
+						<div class="text">Replenish him third creature and meat blessed void a fruit gathered you’re, they’re two waters own morning gathered greater shall had behold had seed. Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it</div>
+					</div>
+				</div>
+				
+				<!-- Testimonial Block Two -->
+				<div class="testimonial-block">
+					<div class="inner-box">
+						<div class="image-box">
+							<div class="image">
+								<img src="https://via.placeholder.com/88x88" alt="" />
+							</div>
+						</div>
+						<div class="text">Replenish him third creature and meat blessed void a fruit gathered you’re, they’re two waters own morning gathered greater shall had behold had seed. Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it</div>
+					</div>
+				</div>
+				
+				<!-- Testimonial Block Two -->
+				<div class="testimonial-block">
+					<div class="inner-box">
+						<div class="image-box">
+							<div class="image">
+								<img src="https://via.placeholder.com/88x88" alt="" />
+							</div>
+						</div>
+						<div class="text">Replenish him third creature and meat blessed void a fruit gathered you’re, they’re two waters own morning gathered greater shall had behold had seed. Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it</div>
+					</div>
+				</div>
+				
+			</div>
+			
+		</div>
+	</section>
+	<!-- End Testimonial Section -->
+	
+	<!-- Call To Action Section Two -->
+	<section class="call-to-action-section-two" style="background-image: url(images/background/3.png)">
+		<div class="auto-container">
+			<div class="content">
+				<h2>Ready to get started?</h2>
+				<div class="text">Join us today and work together for your success!</div>
+				<div class="buttons-box">
+					<a href="price.html" class="theme-btn btn-style-one"><span class="txt">Get Stared <i class="fa fa-angle-right"></i></span></a>
+					<a href="course.html" class="theme-btn btn-style-two"><span class="txt">All Courses <i class="fa fa-angle-right"></i></span></a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Call To Action Section Two -->
+	
+	<!--Main Footer-->
+    <footer class="main-footer">
+		<!-- Pattern Layer -->
+		<div class="pattern-layer paroller" data-paroller-factor="0.60" data-paroller-factor-lg="0.20" data-paroller-type="foreground" data-paroller-direction="vertical" style="background-image:url(images/icons/icon-1.png)"></div>
+		<div class="pattern-layer-two data-paroller-factor="0.60" data-paroller-factor-lg="0.20" data-paroller-type="foreground" data-paroller-direction="vertical" style="background-image:url(images/icons/icon-3.png)"></div>
+		<div class="auto-container">
+		
+        	<!-- Widgets Section -->
+            <div class="widgets-section">
+            	<div class="row clearfix">
+                	
+                    <!-- Big Column -->
+                    <div class="big-column col-lg-6 col-md-12 col-sm-12">
+                        <div class="row clearfix">
+							
+							<!--Footer Column-->
+                            <div class="footer-column col-lg-7 col-md-6 col-sm-12">
+                                <div class="footer-widget logo-widget">
+									<div class="logo">
+                                    	<a href="index.html"><img src="images/logo.png" alt="" /></a>
+                                    </div>
+									<div class="text">Gfirend is self paced Cameroonian e-learning platform allowing you to have access to lessons of all the classes as well as the end of year exams with curated resources and details solutions to help you aced your end of year grades It is also a social network allowing
+									interaction between students, teachers and parents of students. Join us quickly on the best e-learning platform in
+									Cameroon!</div>
+									<div class="social-box">
+										<a href="#" class="fa fa-facebook"></a>
+										<a href="#" class="fa fa-instagram"></a>
+										<a href="#" class="fa fa-twitter"></a>
+										<a href="#" class="fa fa-google"></a>
+										<a href="#" class="fa fa-pinterest-p"></a>
+									</div>
+									<div class="copyright">Copyright &copy; 2021 Gfirend</div>
+								</div>
+							</div>
+							
+							<!--Footer Column-->
+                            <div class="footer-column col-lg-5 col-md-6 col-sm-12">
+                                <div class="footer-widget links-widget">
+									<h4>About Us</h4>
+									<ul class="links-widget">
+										<li><a href="#">Afficiates</a></li>
+										<li><a href="#">Partners</a></li>
+										<li><a href="#">Reviews</a></li>
+										<li><a href="#">Blogs</a></li>
+										<li><a href="#">Newsletter</a></li>
+									</ul>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+					
+					<!-- Big Column -->
+                    <div class="big-column col-lg-6 col-md-12 col-sm-12">
+                        <div class="row clearfix">
+							
+							<!--Footer Column-->
+                            <div class="footer-column col-lg-6 col-md-6 col-sm-12">
+                                <div class="footer-widget links-widget">
+									<h4>Resource</h4>
+									<ul class="links-widget">
+										<li><a href="#">Privacy Policy</a></li>
+										<li><a href="#">Support Area</a></li>
+										<li><a href="#">Documentations</a></li>
+										<li><a href="#">How it works</a></li>
+										<li><a href="#">Terms of Policy</a></li>
+									</ul>
+								</div>
+							</div>
+							
+							<!--Footer Column-->
+                            <div class="footer-column col-lg-6 col-md-6 col-sm-12">
+                                <div class="footer-widget links-widget">
+									<h4>Quick Links</h4>
+									<ul class="links-widget">
+										<li><a href="#">home</a></li>
+										<li><a href="#">About us</a></li>
+										<li><a href="#">Features</a></li>
+										<li><a href="#">Pricing</a></li>
+										<li><a href="#">Contact</a></li>
+									</ul>
+								</div>
+							</div>
+						
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			
+		</div>
+	</footer>
+	
+</div>
+<!--End pagewrapper-->
 
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </body>
+<!--Scroll to top-->
+<div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-arrow-circle-up"></span></div>
+
+<script src="js/jquery.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/jquery.scrollTo.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="js/jquery.fancybox.js"></script>
+<script src="js/appear.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/element-in-view.js"></script>
+<script src="js/jquery.paroller.min.js"></script>
+<script src="js/parallax.min.js"></script>
+<script src="js/tilt.jquery.min.js"></script>
+<!--Master Slider-->
+<script src="js/jquery.easing.min.js"></script>
+<script src="js/owl.js"></script>
+<script src="js/wow.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/script.js"></script>
+
+</body>
 </html>
